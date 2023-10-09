@@ -63,6 +63,8 @@ class Reserva
 
     public function setEstado(string $estado): static
     {
+        // ["pendiente", "cancelada","confirmada"]
+        $estado="pendiente";
         $this->estado = $estado;
 
         return $this;

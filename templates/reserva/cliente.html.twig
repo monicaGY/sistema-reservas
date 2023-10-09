@@ -1,0 +1,11 @@
+{% extends 'frontend.html.twig' %}
+
+
+{% block body %}
+    <form method="POST" action="{{url('reserva')}}" class="m-5 p-5 border rounded-5 border-primary border-2 p-5">
+        <legend>Datos del cliente</legend>
+        {{form(form_cliente)}}
+    </form>
+
+
+{% endblock %}
